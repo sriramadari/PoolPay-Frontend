@@ -448,21 +448,9 @@ const CoSpendPage = () => {
       setLoading(true);
       socketRef.current.emit("paymentConfirmation", users);
       console.log("payment confirmation sent");
-      const messageTemplate = "Your friend is waiting for your payment, Open PoolPay and checkout the notification";
-
-// Extract phone numbers from the users array
-const phoneNumbers = users.map(user => user.phoneNumber);
-
-// Modify the message based on the user's name and amount
-const modifiedMessage = users.map(user => {
-    const { name, amount } = user;
-    const personalizedMessage = `Hey ${name}, you owe ₹${amount} on PoolPay. ${messageTemplate}`;
-    return personalizedMessage;
-});
-
-const messageObject = {
-    numbers: phoneNumbers,
-    message: modifiedMessage.join('\n') // Join messages with line breaks
+     const messageObject = {
+    numbers: users,
+    "messageTemplate": "Hey {name}, you owe ₹{amount} on PoolPay. Your friend is waiting for your payment, Open PoolPay and checkout the notification"
 };
     console.log(messageObject);
     // Make an API call to send the messages using Axios
