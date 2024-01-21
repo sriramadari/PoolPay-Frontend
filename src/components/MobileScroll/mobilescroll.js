@@ -7,19 +7,19 @@ const scrollData = [
     heading: "Track your each Rupee with Bills",
     description:
       "Securely Pool Bills for Smooth Transactions and Strengthen Friendships",
-    lappy_img: require("../../images/carasoul2.png"),
+    lappy_img: require("../../images/caro1.png"),
   },
   {
     heading: "Enhance Financial Bonds",
     description:
       "Get your money back with the periodic interest by enabling Financial bonds",
-    lappy_img: require("../../images/carasoul1.png"),
+    lappy_img: require("../../images/caro2.png"),
   },
   {
     heading: "Split Expenses Smoothly",
     description:
       "Effortlessly divide and manage expenses among friends while maintaining transparency and trust. Bills for Smooth Transactions and Strengthen Friendships",
-    lappy_img: require("../../images/Group 31.png"),
+    lappy_img: require("../../images/caro3.png"),
   },
 ];
 const MobileScroll = () => {
