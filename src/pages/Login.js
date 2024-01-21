@@ -9,6 +9,7 @@ const Login = () => {
   const googleProvider = new GoogleAuthProvider();
   const [showMobileInput, setShowMobileInput] = useState(false);
   const [mobileNumber, setMobileNumber] = useState("");
+  const [email, setEmail] = useState("");
   const socketRef = useSocketRef();
 
   const handleGoogleSignIn = async () => {
@@ -16,7 +17,7 @@ const Login = () => {
       await signInWithPopup(auth, googleProvider); 
       onAuthStateChanged(auth, (user) => {
         if (user) {
-          console.log(user.email)
+          setEmail(user.email);
           axios.get(`https://poolpayapi.onrender.com/user/hasMobileNumber?email=${user.email}`).then((res) => {
               if(!res.data.hasMobileNumber){
                 console.log("user don't have mobile number")
@@ -41,10 +42,13 @@ const Login = () => {
   };
 
   const handleMobileNumberSubmit = () => {
-    if (socketRef.current) {
-      socketRef.current.emit("joinPool", mobileNumber);
-    }
-    setShowMobileInput(false);
+    axios.post("https://poolpayapi.onrender.com/user", { email:email,phone: mobileNumber }).then((res) => {
+      if (socketRef.current) {
+        socketRef.current.emit("joinPool", mobileNumber);
+        setShowMobileInput(false);
+      }
+    }).catch((err) => {  console.log(err); });
+   
   };
 
   return (
