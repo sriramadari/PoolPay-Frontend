@@ -34,13 +34,6 @@ const HomePage = () => {
     if (socket.current) {
       console.log("connected to socket");
     }
-    // console.log(socket.current.connected);
-    if (sessionStorage.getItem("mobileNumber")) {
-      const mobileNumber = sessionStorage.getItem("mobileNumber");
-      socket.current.emit("joinPool", mobileNumber);
-    }
-    // if(socket.current){
-    // console.log(socket.current.connected)
     socket.current.on("paymentStatus", (event) => {
       try {
         console.log("payment status received", event.status);

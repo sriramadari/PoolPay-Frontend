@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-import Login from "../../pages/Login"; // Import the Google login component
 
 const Header = () => {
   const [showMobMenu, setShowMobMenu] = useState(false);
@@ -13,14 +12,12 @@ const Header = () => {
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        // User is signed in.
+        console.log(user.email)
         setUser(user);
       } else {
-        // User is signed out.
         setUser(null);
       }
     });
-
     return () => unsubscribe();
   }, []);
 
