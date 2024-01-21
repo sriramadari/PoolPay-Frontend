@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-content">
           <p>&copy; {currentYear} CrewPe. All Rights Reserved.</p>
           <p>Address: Gajuwaka, Visakhapatnam, India</p>
-          <p>Email: CrewPe@support.com</p>
+          <p>Email: crewpe@support.com</p>
           <p>Phone: +91 8919774630</p>
         </div>
       </div>
