@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import "./header.css";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import Login from "../../pages/Login"; // Import the Google login component
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [showMobMenu, setShowMobMenu] = useState(false);
   const [user, setUser] = useState(null); // Store user data
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+  const [showNotifications, setShowNotifications] = useState(false);
+  const [unreadNotifications, setUnreadNotifications] = useState(true);
 
   useEffect(() => {
     const auth = getAuth();
@@ -20,6 +24,9 @@ const Header = () => {
         setUser(null);
       }
     });
+
+    // Simulate new notifications (you should replace this with your own logic)
+    setUnreadNotifications(true);
 
     return () => unsubscribe();
   }, []);
@@ -41,6 +48,11 @@ const Header = () => {
     }
   };
 
+  const toggleNotifications = () => {
+    setShowNotifications(!showNotifications);
+    setUnreadNotifications(false); // Mark notifications as read when opened
+  };
+
   return (
     <div className={`mobile-menu-wrapper ${user ? "" : "hidden"}`}>
       <div
@@ -50,6 +62,13 @@ const Header = () => {
           <Link to="/co-spend" className="mobile-nav-item">
             CO SPEND
           </Link>
+          <div className="notification-wrapper" onClick={toggleNotifications}>
+            <span className="notification-icon">
+              {unreadNotifications && <span className="dot"></span>}
+              <FontAwesomeIcon icon={faBell} />
+            </span>
+            Notifications
+          </div>
           <Link to="/co-loan" className="mobile-nav-item">
             CO LOAN
           </Link>
@@ -76,6 +95,20 @@ const Header = () => {
         </div>
 
         <div className="non-mobile flex">
+          <div className="notification-wrapper" onClick={toggleNotifications}>
+            <span className="notification-icon">
+              {unreadNotifications && <span className="dot"></span>}
+              <FontAwesomeIcon icon={faBell} />
+            </span>
+            {showNotifications && (
+              <div className="notifications-box">
+                {/* Display your notifications here */}
+                <p>You have 3 new notifications.</p>
+                <p>Another notification.</p>
+                {/* Add more notification items as needed */}
+              </div>
+            )}
+          </div>
           <Link to="/co-spend" className="header-nav-item">
             CO SPEND
           </Link>
@@ -104,4 +137,5 @@ const Header = () => {
     </div>
   );
 };
+
 export default Header;
