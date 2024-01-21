@@ -47,7 +47,7 @@
 }
 
 .co-loan-button:hover {
-  background-color: #4a0080;
+  background-color: #000000;
   transform: scale(1.05); /* Add a slight scale effect on hover */
 }
 
@@ -78,7 +78,7 @@
 .contact-details h2 {
   font-size: 20px;
   font-weight: bold;
-  color: #6a00ff;
+  color: #00ffff;
   margin-top: 0; /* Remove default top margin */
 }
 
@@ -89,7 +89,7 @@
 
 /* Styling for pay money button */
 .pay-money-button {
-  background-color: #6a00ff;
+  background-color: #00ffff;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -130,7 +130,7 @@
 }
 
 .add-users-button {
-  background-color: #6a00ff;
+  background-color: #00ffff;
   color: var(--bg-black);
   height: 100px;
   width: 100px;
