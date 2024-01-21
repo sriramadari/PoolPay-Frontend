@@ -12,7 +12,6 @@ const Header = () => {
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        console.log(user.email)
         setUser(user);
       } else {
         setUser(null);
