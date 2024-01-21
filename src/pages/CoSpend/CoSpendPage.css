@@ -1,11 +1,13 @@
 /* Container for the CoSpendPage */
-
+button {
+  background-color: #00ffff;
+}
 .co-spend-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh; /* Change height to min-height */
-  background-color: #00ffff;
+  background: linear-gradient(#154343, #0f7878, #125e5e);
   color: var(--white);
 }
 
@@ -17,7 +19,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 20px;
-  background-color: #00ffff;
+  background: linear-gradient(#154343, #0f7878, #125e5e);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: var(--white);
@@ -53,7 +55,7 @@
 }
 
 .co-spend-buttons .selected {
-  background-color: #4a0080;
+  background-color: #00ffff;
 }
 
 /* Right side with content */
@@ -79,7 +81,7 @@
 .contact-details h2 {
   font-size: 20px;
   font-weight: bold;
-  color: #6a00ff;
+  color: #00ffff;
   margin-top: 0; /* Remove default top margin */
 }
 
@@ -90,7 +92,7 @@
 
 /* Styling for pay money button */
 .pay-money-button {
-  background-color: #6a00ff;
+  background-color: #00ffff;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -103,7 +105,7 @@
 }
 
 .pay-money-button:hover {
-  background-color: #4a0080;
+  background-color: #00ffff;
 }
 
 /* Styling for the "Pay by Phone Number" section */
@@ -130,7 +132,7 @@
 }
 
 .add-users-button {
-  background-color: #6a00ff;
+  background-color: #00ffff;
   color: var(--bg-black);
   height: 20px;
   width: 150px;
@@ -143,7 +145,7 @@
 }
 
 .add-users-button:hover {
-  background-color: #4a0080;
+  background-color: #00ffff;
 }
 
 .user-input-row {
@@ -164,7 +166,7 @@ button {
   font-weight: 700;
   height: 50px;
   width: 100px;
-  background-color: #fff;
+  background-color: #00ffff;
   border-radius: 20px;
 }
 .next {
