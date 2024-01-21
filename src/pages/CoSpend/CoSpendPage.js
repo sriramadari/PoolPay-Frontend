@@ -448,31 +448,32 @@ const CoSpendPage = () => {
       setLoading(true);
       socketRef.current.emit("paymentConfirmation", users);
       console.log("payment confirmation sent");
-     const messageObject = {
-    numbers: users,
-    "messageTemplate": "Hey {name}, you owe ₹{amount} on PoolPay. Your friend is waiting for your payment, Open PoolPay and checkout the notification"
-};
-    console.log(messageObject);
-    // Make an API call to send the messages using Axios
-    axios.post('https://poolpayapi.onrender.com/send-messages', messageObject)
-        .then(response => {
-            // setLoading(false); // Hide the loading spinner
-            const data = response.data;
+      const messageObject = {
+        numbers: users,
+        messageTemplate:
+          "Hey {name}, you owe ₹{amount} on PoolPay. Your friend is waiting for your payment, Open PoolPay and checkout the notification",
+      };
+      console.log(messageObject);
+      // Make an API call to send the messages using Axios
+      axios
+        .post("https://poolpayapi.onrender.com/send-messages", messageObject)
+        .then((response) => {
+          // setLoading(false); // Hide the loading spinner
+          const data = response.data;
         })
-        .catch(error => {
-            setLoading(false); // Hide the loading spinner
-            console.error('Error sending messages:', error);
-            alert("Failed to send messages");
+        .catch((error) => {
+          setLoading(false); // Hide the loading spinner
+          console.error("Error sending messages:", error);
+          alert("Failed to send messages");
         });
-      socketRef.current.on("Accepted",(event)=>{
+      socketRef.current.on("Accepted", (event) => {
         setLoading(false);
         alert("Payment Successful!");
-      })
-      socketRef.current.on("Declined",(event)=>{
+      });
+      socketRef.current.on("Declined", (event) => {
         setLoading(false);
         alert(event.status);
-      })
-     
+      });
     } else {
       alert(
         "Please ensure the total amount and user amounts match before proceeding with payment."
@@ -595,12 +596,12 @@ const CoSpendPage = () => {
         ) : null}
       </div>
       {loading && (
-      <div className="overlay">
-        <div className="loader-container">
-          <div className="loader"></div>
+        <div className="overlay">
+          <div className="loader-container">
+            <div className="loader"></div>
+          </div>
         </div>
-      </div>
-    )}
+      )}
     </div>
   );
 };
