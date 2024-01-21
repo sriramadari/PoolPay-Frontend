@@ -86,11 +86,11 @@
 }
 
 .header-logo {
-  background-image: url(../../../public/images/logo1.svg);
+  background-image: url(../../../public/images/model3.svg);
   background-size: contain;
-  width: 280px;
-  height: 150px;
-  padding-top: 70px;
+  width: 250px;
+  height: 250px;
+  padding-top: 0px;
 
   /* Other styles for the header logo */
 }
