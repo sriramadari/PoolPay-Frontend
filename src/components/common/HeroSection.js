@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="hero-heading">
           Share Moments, Share Costs, Request with Ease.
         </div>
-        <div className="hero-subheading"> with POOLPAY</div>
+        <div className="hero-subheading"> with CREWPE</div>
         <Login buttonText="Start Pooling" />
       </div>
     </div>
