@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+
 import Login from "../../pages/Login"; // Import the Google login component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
+=======
+
 
 const Header = () => {
   const [showMobMenu, setShowMobMenu] = useState(false);
@@ -17,16 +20,16 @@ const Header = () => {
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        // User is signed in.
         setUser(user);
       } else {
-        // User is signed out.
         setUser(null);
       }
     });
 
+
     // Simulate new notifications (you should replace this with your own logic)
     setUnreadNotifications(true);
+
 
     return () => unsubscribe();
   }, []);
