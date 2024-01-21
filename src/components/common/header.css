@@ -131,3 +131,46 @@
 .profile-dropdown button:hover {
   background-color: #ffffff; /* Background color on hover */
 }
+
+.notification-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.notification-icon {
+  display: inline-block;
+  position: relative;
+  size: 20px;
+}
+
+.dot {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.notifications-box {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  background-color: #0f0f0f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+}
+
+.notifications-box p {
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 5px solid #eee;
+}
+
+.notifications-box p:last-child {
+  border-bottom: none;
+}
