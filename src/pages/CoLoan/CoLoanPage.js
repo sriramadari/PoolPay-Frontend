@@ -172,7 +172,11 @@ const CoLoanPage = () => {
               value={phoneNumberToPay}
               onChange={handlePhoneNumberInputChange}
             />
-            <button onClick={handleNextStep} disabled={!isPhoneNumberValid} className="next">
+            <button
+              onClick={handleNextStep}
+              disabled={!isPhoneNumberValid}
+              className="next"
+            >
               Next
             </button>
           </div>
@@ -187,8 +191,12 @@ const CoLoanPage = () => {
               value={totalAmount}
               onChange={handleTotalAmountInputChange}
             />
-            <button onClick={handlePrevStep}className="prev">Previous</button>
-            <button onClick={handleNextStep}className="next">Next</button>
+            <button onClick={handlePrevStep} className="prev">
+              Previous
+            </button>
+            <button onClick={handleNextStep} className="next">
+              Next
+            </button>
           </div>
         );
       case 3:
@@ -201,8 +209,12 @@ const CoLoanPage = () => {
               value={numUsersPooling}
               onChange={handleNumUsersPoolingChange}
             />
-            <button onClick={handlePrevStep}className="prev">Previous</button>
-            <button onClick={handleNextStep}className="next">Next</button>
+            <button onClick={handlePrevStep} className="prev">
+              Previous
+            </button>
+            <button onClick={handleNextStep} className="next">
+              Next
+            </button>
           </div>
         );
       case 4:
@@ -258,8 +270,12 @@ const CoLoanPage = () => {
               Amount Remaining (₹): ₹
               {(totalAmount - totalUserAmount).toFixed(2)}
             </p>
-            <button onClick={handlePrevStep}className="prev">Previous</button>
-            <button onClick={handleNextStep}className="next">Next</button>
+            <button onClick={handlePrevStep} className="prev">
+              Previous
+            </button>
+            <button onClick={handleNextStep} className="next">
+              Next
+            </button>
           </div>
         );
       case 5:
@@ -268,8 +284,9 @@ const CoLoanPage = () => {
             <button className="pay-money-button" onClick={handlePayMoneyClick}>
               Pay Money
             </button>
-            <button onClick={handlePrevStep}className="prev">Previous</button>
-            
+            <button onClick={handlePrevStep} className="prev">
+              Previous
+            </button>
           </div>
         );
       default:
@@ -440,7 +457,7 @@ const CoLoanPage = () => {
           onClick={toggleGlobalLoanForm}
         >
           <div>
-            <img src="./images/Globe.svg" />
+            <img src="./images/Globe.png" />
           </div>
           Request Loan Globally
         </button>
@@ -453,7 +470,7 @@ const CoLoanPage = () => {
           }}
         >
           <div>
-            <img src="./images/hands.svg" />
+            <img src="./images/hands.png" />
           </div>
           Request Loan from Friends
         </button>
@@ -466,7 +483,7 @@ const CoLoanPage = () => {
       </div>
       {/* Right side */}
       <div className="co-loan-welcome">
-        {isRightSideImageVisible && <img src="./images/Group 10.svg" />}
+        {isRightSideImageVisible && <img src="./images/model2.png" />}
         {showGlobalLoanForm && (
           <div className="global-loan-form">
             <LoanRequestForm

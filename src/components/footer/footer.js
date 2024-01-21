@@ -8,9 +8,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <p>&copy; {currentYear} PoolPay. All Rights Reserved.</p>
+          <p>&copy; {currentYear} CrewPe. All Rights Reserved.</p>
           <p>Address: Gajuwaka, Visakhapatnam, India</p>
-          <p>Email: PoolPay@support.com</p>
+          <p>Email: CrewPe@support.com</p>
           <p>Phone: +91 8919774630</p>
         </div>
       </div>
