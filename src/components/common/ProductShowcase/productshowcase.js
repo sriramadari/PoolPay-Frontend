@@ -37,7 +37,7 @@ const ProductShowcase = () => {
       {showAnimation && (
         <div className="showcase-wrapper">
           <img
-            src="./images/24.png"
+            src="./images/241.png"
             className="showcase-ui showcase-mockup-1"
             alt="Mockup 1"
           />
@@ -47,7 +47,7 @@ const ProductShowcase = () => {
             alt="Mockup 2"
           />
           <img
-            src="./images/aqua2.png"
+            src="./images/aqua21.png"
             className="showcase-ui showcase-mockup-3"
             alt="Mockup 3"
           />
