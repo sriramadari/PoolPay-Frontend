@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh; /* Change height to min-height */
-  background-color: var(--bg-black);
+  background: linear-gradient(#154343, #0f7878, #125e5e);
   color: var(--white);
   text-align: center;
 }
@@ -16,7 +16,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 20px;
-  background-color: var(--bg-black);
+  background: linear-gradient(#154343, #0f7878, #125e5e);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: var(--white);
@@ -27,7 +27,7 @@
   height: 299px;
   flex-shrink: 0;
   border-radius: 29px;
-  background: linear-gradient(180deg, #6A00FF 0%, rgba(106, 0, 255, 0.00) 100%);
+  background-color: var(--bg-black);
   box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.25);
   font-weight: bold; /* Improved font weight */
   font-size: 24px; /* Reduced font size */
@@ -47,7 +47,7 @@
 }
 
 .co-loan-button:hover {
-  background-color: #4a0080;
+  background-color: #000000;
   transform: scale(1.05); /* Add a slight scale effect on hover */
 }
 
@@ -78,7 +78,7 @@
 .contact-details h2 {
   font-size: 20px;
   font-weight: bold;
-  color: #6A00FF;
+  color: #00ffff;
   margin-top: 0; /* Remove default top margin */
 }
 
@@ -89,7 +89,7 @@
 
 /* Styling for pay money button */
 .pay-money-button {
-  background-color: #6A00FF;
+  background-color: #00ffff;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -130,7 +130,7 @@
 }
 
 .add-users-button {
-  background-color: #6A00FF;
+  background-color: #00ffff;
   color: var(--bg-black);
   height: 100px;
   width: 100px;
@@ -159,7 +159,7 @@
   margin-right: 10px;
 }
 
-button{
+button {
   color: var(--bg-black);
   font-weight: 700;
   height: 50px;
@@ -183,7 +183,6 @@ button{
   border-radius: 4px;
   font-size: 16px;
 }
-.pay-by-phone{
+.pay-by-phone {
   margin-right: 150px;
 }
-

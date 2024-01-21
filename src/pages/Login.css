@@ -1,0 +1,15 @@
+/* Add this CSS to your stylesheet or component styles */
+.xyz {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.xyz:focus {
+  outline: none;
+  border-color: #007bff; /* Change the color on focus if needed */
+}

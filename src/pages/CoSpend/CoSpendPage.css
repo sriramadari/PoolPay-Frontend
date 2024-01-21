@@ -1,7 +1,4 @@
 /* Container for the CoSpendPage */
-button {
-  background-color: #00ffff;
-}
 .co-spend-container {
   display: flex;
   justify-content: space-between;
@@ -51,7 +48,7 @@ button {
 
 .co-spend-button:hover {
   background-color: #000000;
-  transform: scale(1.05); /* Add a slight scale effect on hover */
+  transform: scale(1.05);
 }
 
 .co-spend-buttons .selected {
@@ -137,17 +134,11 @@ button {
   height: 20px;
   width: 150px;
   padding: 12px 24px;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s ease;
 }
-
-.add-users-button:hover {
-  background-color: #00ffff;
-}
-
 .user-input-row {
   display: flex;
   color: #333;
