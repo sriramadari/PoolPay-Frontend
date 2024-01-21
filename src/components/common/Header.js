@@ -7,8 +7,6 @@ import Login from "../../pages/Login"; // Import the Google login component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 
-
-
 const Header = () => {
   const [showMobMenu, setShowMobMenu] = useState(false);
   const [user, setUser] = useState(null); // Store user data
@@ -26,10 +24,8 @@ const Header = () => {
       }
     });
 
-
     // Simulate new notifications (you should replace this with your own logic)
     setUnreadNotifications(true);
-
 
     return () => unsubscribe();
   }, []);

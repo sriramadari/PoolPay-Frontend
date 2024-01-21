@@ -531,7 +531,7 @@ const CoSpendPage = () => {
       <div className="co-spend-buttons">
         <button className="co-spend-button" onClick={handleScanAndPayClick}>
           <div>
-            <img src="./images/Qr code.svg" />
+            <img src="./images/qr code.png" />
           </div>{" "}
           Scan & Pay
         </button>
@@ -541,7 +541,7 @@ const CoSpendPage = () => {
           onClick={handlePayByPhoneNumberClick}
         >
           <div>
-            <img src="./images/Vector.svg" />
+            <img src="./images/phone.png" />
           </div>{" "}
           Pay by Phone Number
         </button>
@@ -550,7 +550,7 @@ const CoSpendPage = () => {
       {/* Right Side */}
       <div className="co-spend-welcome">
         {showGroupImage && ( // Conditionally render the Group32.png image
-          <img src="./images/Group32.png" alt="Group Image" />
+          <img src="./images/model.png" alt="Group Image" />
         )}
         {showScanner ? (
           currentScanStep === 0 ? (
