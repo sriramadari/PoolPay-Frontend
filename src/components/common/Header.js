@@ -6,7 +6,7 @@ import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import Login from "../../pages/Login"; // Import the Google login component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
-=======
+
 
 
 const Header = () => {
