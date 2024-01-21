@@ -1,7 +1,4 @@
 /* Container for the CoSpendPage */
-button {
-  background-color: #00ffff;
-}
 .co-spend-container {
   display: flex;
   justify-content: space-between;
