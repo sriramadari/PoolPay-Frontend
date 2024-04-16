@@ -33,7 +33,6 @@ const CoInvestPage = () => {
     const newSearchTerm = e.target.value;
     setSearchTerm(newSearchTerm);
 
-    // Filter the investRequests based on the search term
     const filtered = investRequests.filter((request) =>
       request.user.toLowerCase().includes(newSearchTerm.toLowerCase())
     );
