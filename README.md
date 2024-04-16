@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# PoolPay - Payment Pooling Platform
+https://pool-pay-frontend.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Problem Statement
+In an increasingly digital world, financial transactions and collaborations demand a user-friendly, automated platform for pooling and managing funds. Traditional financial systems often lack efficiency, transparency, and ease of use. "PoolPay" addresses these challenges by providing a streamlined solution for pooling money, lending, spending, investing, and generating automated legal documentation.
 
-## Available Scripts
+## Description
+PoolPay is a financial collaboration application designed to simplify and enhance the management of pooled funds for various purposes. With features such as pooling-loaning, pooling-spending, pooling-investing, and auto documentation, PoolPay aims to facilitate seamless financial interactions while ensuring transparency and security.
 
-In the project directory, you can run:
+## Solution/Approach
+Pooling-Loaning: Users can form groups to pool money and lend it to others. The application automates the generation of legal documentation, providing a formalized and secure lending process.
 
-### `npm start`
+Pooling-Spending: Pool funds for shared expenses, making it easy to split bills at restaurants or collectively pay for products and services. Eliminate the hassle of individual transactions with this simplified group payment feature.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pooling-Investing: Collaboratively invest in assets, such as stocks, real estate, or other ventures. Pooling funds allows individuals to access investment opportunities that might be financially challenging for them individually.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Auto Documentation: The application's automated documentation feature generates legal documents to validate transactions, loans, and investments, ensuring compliance with regulations and building trust among participants.
 
-### `npm test`
+## Technology Stack
+Frontend: React for building dynamic user interfaces.
+Styling: CSS for styling the frontend components.
+Backend: Express and Node.js for handling server-side logic and APIs.
+Database: Firebase for storing user information, transaction history, and documents.
+Authentication: Firebase Authentication for secure user authentication and authorization.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+To run the PoolPay application locally, follow these steps:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Clone the repository: git clone https://github.com/your-username/PoolPay.git
+Install dependencies: npm install
+Set up Firebase credentials for authentication and database.
+Start the development server: npm start
